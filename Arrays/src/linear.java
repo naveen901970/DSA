@@ -19,9 +19,9 @@ public class linear {
         int key=sc.nextInt();
         int index=LInearSearch(Number,key);
         if(index==-1){
-            System.out.println("Not Found");
+              System.out.println("Not Found");
         }else{
-            System.out.println("FOUND THE KEY");
+              System.out.println("FOUND THE KEY");
         }
 
         
