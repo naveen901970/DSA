@@ -32,7 +32,7 @@ public static int  binarysearch(int numbers[],int key) {
         if(index==-1){
             System.out.println("NOT OF fornd");
         }else{
-            System.out.println("Found at"+index);
+              System.out.println("Found at"+index);
         }
     }
 }
