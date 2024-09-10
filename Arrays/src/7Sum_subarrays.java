@@ -17,7 +17,7 @@ public class Sum_subarrays {
                  System.out.print("["+sum+"]");
                  System.out.print(" ");
              }
-              System.out.println("");
+                 System.out.println("");
             
         }
     }
