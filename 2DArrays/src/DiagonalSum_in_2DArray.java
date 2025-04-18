@@ -1,8 +1,8 @@
 public class DiagonalSum_in_2DArray{
 
     public static void Diagonal_sum(int matrice[][]) {
-        int psum=0;
-        int Dsum=0;
+        int primarysum=0;
+        int Diagonalsum=0;
         // for (int i = 0; i < matrice.length; i++) {
         //     for (int j = 0; j < matrice[0].length; j++) {
         //                if(i==j){
@@ -16,10 +16,10 @@ public class DiagonalSum_in_2DArray{
         
     //}O(n^2)we can reduce the time complexcity
     for (int i = 0; i < matrice.length; i++) {
-        psum+=matrice[i][i];
-        Dsum+=matrice[i][matrice.length-1-i];
+        primarysum+=matrice[i][i];
+        Diagonalsum+=matrice[i][matrice.length-1-i];
     }//O(N)
-    System.out.println(psum+Dsum);
+    System.out.println(primarysum+Diagonalsum);
 }
     public static void main(String[] args) {
         int matrice[][]={{1,2,3,4},

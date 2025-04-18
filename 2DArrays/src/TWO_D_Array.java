@@ -2,7 +2,7 @@
 import java.util.Scanner;
 
 public class  TWO_D_Array {
-    public static boolean Searchtwoarray(int matrics[][],int key ) {
+    public static boolean SearchtwoDarray(int matrics[][],int key ) {
         for (int i = 0; i < matrics.length ; i++) {
             for (int j = 0; j < matrics[0].length; j++) {
                 if(matrics[i][j]==key){
@@ -48,7 +48,7 @@ public class  TWO_D_Array {
             
         }
         int key=sc.nextInt();
-        //System.out.println(Searchtwoarray(matrics ,key));
+        System.out.println(SearchtwoDarray(matrics ,key));
         Searchtwoarray_max_min(matrics );
     }
 }

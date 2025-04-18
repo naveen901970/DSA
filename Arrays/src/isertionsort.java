@@ -4,9 +4,13 @@ public class isertionsort {
         for (int i = 1; i < sort.length; i++) {
             int curr=sort[i];
             int prev=i-1;
+          
             while (prev>=0 && sort[prev]>curr) { 
+             
                 sort[prev+1]=sort[prev];
+            
                 prev--;
+            
             }
             // prev=prev+1;
             sort[prev+1]=curr;

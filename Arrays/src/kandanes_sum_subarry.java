@@ -1,4 +1,4 @@
-public class kandanes_sum_subarry {
+public class  kandanes_sum_subarry {
     public static void kadanemaxsubarray(int  numbers[]) {
       
         int cs=0;
@@ -28,7 +28,7 @@ public class kandanes_sum_subarry {
      }
     
         public static void main(String[] args) throws Exception {
-            int numbers[]={-1,-2,-3,-4,7};
+            int numbers[]={-1,-2,6,-1,3};
             // maxsubarrays(numbers);
             kadanemaxsubarray( numbers) ;
         }

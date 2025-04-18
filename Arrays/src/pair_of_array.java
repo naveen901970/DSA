@@ -1,4 +1,4 @@
-public class pair_of_array {
+public class  pair_of_array {
     
    public static void pairofarray(int numbers[]) {
     int countofpairs=0;

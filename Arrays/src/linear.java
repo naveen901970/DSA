@@ -2,7 +2,7 @@
 import java.util.Scanner;
 
 
-public class linear {
+public class  linear {
     public static int LInearSearch(int Number[],int key) {
         for (int i = 0; i < Number.length; i++) {
             if(Number[i]==key){

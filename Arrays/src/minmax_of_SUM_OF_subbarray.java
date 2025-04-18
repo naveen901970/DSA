@@ -1,4 +1,4 @@
-public class minmax_of_SUM_OF_subbarray {
+public class  minmax_of_SUM_OF_subbarray {
     
 
 

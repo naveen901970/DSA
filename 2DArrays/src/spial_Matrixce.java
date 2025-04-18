@@ -2,7 +2,7 @@ public class spial_Matrixce {
     public static void spiral_matrix(int matrice[][]) {
         int start_row=0;
         int end_row=matrice.length-1;
-        int end_col=matrice.length-1;
+        int end_col=matrice[0].length-1;
         int start_col=0;
         while(start_row<=end_row && start_col<=end_col){
             for (int j= start_col;  j <=end_col;  j++){

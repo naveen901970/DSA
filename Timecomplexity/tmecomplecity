@@ -1,0 +1,128 @@
+Time complexity is a measure of the amount of time an algorithm takes to complete as a function of the input size (n). It helps evaluate the efficiency of an algorithm and predict its performance for large inputs.
+
+Common Time Complexities:
+O(1) - Constant Time: The execution time remains the same regardless of input size.
+
+Example: Accessing an element in an array (arr[i]).
+
+O(log n) - Logarithmic Time: The execution time increases logarithmically as input size grows.
+
+Example: Binary Search.
+
+O(n) - Linear Time: The execution time grows proportionally with input size.
+
+Example: Traversing an array.
+
+O(n log n) - Linearithmic Time: The execution time grows at a rate of n log n.
+
+Example: Merge Sort, Quick Sort (average case).
+
+O(n²) - Quadratic Time: The execution time grows proportionally to the square of the input size.
+
+Example: Bubble Sort, Selection Sort.
+
+O(2ⁿ) - Exponential Time: The execution time doubles with each additional input.
+
+Example: Recursive Fibonacci calculation.
+
+O(n!) - Factorial Time: The execution time grows factorially.
+
+Example: Solving the Traveling Salesman Problem using brute fo
+
+====================================================================================================================
+Upper Bound & Lower Bound in Algorithm Analysis
+When analyzing the time complexity of an algorithm, we define how its execution time grows as the input size n increases. This is done using upper bounds (Big-O) and lower bounds (Big-Omega, Ω).
+
+1️⃣ Upper Bound (Big-O Notation)
+Defines the worst-case time complexity.
+
+It tells us the maximum time an algorithm will take for a given input size.
+
+Ensures that the function never grows faster than a certain rate.
+
+Example
+Consider the function:
+f(n) = 3n^2 + 5n + 2
+
+The dominant term (the one that grows the fastest) is n^2.
+
+So, Big-O (upper bound) is O(n^2).
+
+📌 Mathematical Definition:
+A function f(n) = O(g(n)) if there exist constants c > 0 and n0 such that:
+
+r
+Copy
+Edit
+f(n) <= c \* g(n), for all n >= n0
+Analogy
+Think of an elevator with a weight limit. No matter what, the elevator won't carry more than the weight limit (this is the upper bound).
+
+2️⃣ Lower Bound (Big-Omega Notation, Ω)
+Defines the best-case time complexity.
+
+It tells us the minimum time an algorithm will take for a given input size.
+
+Ensures that the function at least grows at a certain rate.
+
+Example
+For the same function:
+f(n) = 3n^2 + 5n + 2
+
+The algorithm will always take at least Ω(n^2) operations.
+
+📌 Mathematical Definition:
+A function f(n) = Ω(g(n)) if there exist constants c > 0 and n0 such that:
+
+r
+Copy
+Edit
+f(n) >= c \* g(n), for all n >= n0
+Analogy
+Think of a speed limit on a road. No matter what, a car must at least move at the minimum speed (this is the lower bound).
+
+3️⃣ Tight Bound (Big-Theta Notation, Θ)
+When a function has both an upper and lower bound that match, we use Θ notation.
+
+This gives a tight bound (exact order of growth).
+
+📌 Mathematical Definition:
+A function f(n) = Θ(g(n)) if there exist constants c1, c2 > 0 and n0 such that:
+
+cpp
+Copy
+Edit
+c1 _ g(n) <= f(n) <= c2 _ g(n), for all n >= n0
+Example
+For f(n) = 3n^2 + 5n + 2,
+
+We already know O(n^2) is the upper bound.
+
+We also know Ω(n^2) is the lower bound.
+
+So, the exact bound is Θ(n^2).
+
+Summary Table
+mathematica
+Copy
+Edit
+Notation | Meaning | Defines | Example
+
+---
+
+O (Big-O) | Upper Bound | Worst-case | O(n^2) for Bubble Sort
+Ω (Big-Omega) | Lower Bound | Best-case | Ω(n) for Linear Search
+Θ (Big-Theta) | Tight Bound | Exact Complexity | Θ(n log n) for Merge Sort
+====================================================================================================================
+Big-Omega (Ω) Notation – Lower Bound
+Big-Omega (Ω) notation represents the lower bound of an algorithm's time complexity. It defines the best-case scenario, meaning the minimum time an algorithm will always take, regardless of the input.
+
+Definition
+A function f(n) = Ω(g(n)) if there exist constants c > 0 and n0 such that:
+
+r
+Copy
+Edit
+f(n) >= c \* g(n), for all n >= n0
+This means that the algorithm at least takes g(n) time for large n.
+====================================================================================================================

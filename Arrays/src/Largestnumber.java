@@ -1,4 +1,4 @@
-public class Largestnumber{
+public class  Largestnumber{
 
   public static int Largest(int number[],int largest,int smallest){
       for (int i = 0; i < number.length; i++) {

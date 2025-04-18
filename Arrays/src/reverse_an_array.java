@@ -1,4 +1,4 @@
-public class reverse_an_array {
+public class  reverse_an_array {
 
     public static void reverse(int number[]){
         int first=0;

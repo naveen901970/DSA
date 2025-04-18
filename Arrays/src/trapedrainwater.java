@@ -1,4 +1,4 @@
-public class App {
+public class trapedrainwater {
 
 
     public static int trapedrainwater(int hight[]) {
@@ -14,9 +14,13 @@ public class App {
         for(int i=n-2;i>=0;i--){
             rightmax[i]=Math.max(hight[i], rightmax[i+1]);
         }
+        for (int i = 0; i <= n; i++) {
+            System.err.println(rightmax[i]+"||"+leftmax[i]);
+            
+        }
 
     int trappedwater=0;
-    for (int i = 0; i < n; i++) {
+    for (int i = 0; i <n; i++) {
         int waterlevel=Math.min(leftmax[i],rightmax[i]);
         trappedwater=trappedwater+(waterlevel-hight[i]);
 
